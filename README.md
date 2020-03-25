@@ -19,7 +19,6 @@ Execute the following command in the repository root directory in order to build
 
 ```
 mvn package
-
 ```
 
 This command generates a seperate jar file in each module's corresponding target (`module/target`) directory.
