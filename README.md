@@ -1,4 +1,4 @@
-#Build Automation Tools
+#Build Automation Tools#
 
 This repository serves as a basic demonstration of the build automation tools (i.e., Maven, Gradle) for the needs of the Software Eningineering in Practice (SEiP) course offered by the <a href="https://www.dept.aueb.gr/en/dmst">Department of Management Science & Technology</a> of the Athens University of Economics and Business.
 
