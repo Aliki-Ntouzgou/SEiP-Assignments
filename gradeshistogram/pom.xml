@@ -27,7 +27,7 @@
     	<configuration>
     	    <archive>
         	    <manifest>
-            	    <mainClass>JFreeChartXYLineChartDemo</mainClass> <!-- replace this with the class that contains the main method. It requires also the package name if exists. -->
+            	    <mainClass>gradeshistogram.HistogramGenerator</mainClass> 
             	</manifest>
         	</archive>
         	<descriptorRefs>
