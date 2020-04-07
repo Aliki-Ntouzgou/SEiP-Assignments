@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IDE-specific files and directories
 .project
 .settings/
@@ -13,3 +14,16 @@ build/
 # Compiled class file
 *.class
 
+=======
+# IDE-specific files and directories
+.project
+.settings/
+.classpath
+
+# Maven output files and directories
+target/
+
+# Compiled class file
+*.class
+
+>>>>>>> f33aca05e0858c5b6c8c8b451f471cc3209a9a7c
