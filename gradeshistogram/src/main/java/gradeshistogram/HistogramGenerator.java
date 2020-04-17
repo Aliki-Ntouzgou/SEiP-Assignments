@@ -9,6 +9,11 @@ import org.jfree.data.xy.XYSeriesCollection;
 import java.io.*; //For File class and Exception 
 import java.util.Scanner;
 
+/***
+ * 
+ * @author Aliki-Ntouzgou 
+ * @since March 2020
+ */
 
 public class HistogramGenerator {
 
