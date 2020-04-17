@@ -6,8 +6,14 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
+import java.io.*; //For File class and Exception 
 import java.util.Scanner;
-import java.io.*;
+
+/***
+ * 
+ * @author Aliki-Ntouzgou 
+ * @since March 2020
+ */
 
 public class HistogramGenerator {
 
@@ -47,7 +53,7 @@ public class HistogramGenerator {
 		boolean urls = false; // do not visualize urls
 
 		// Declare and initialize a createXYLineChart JFreeChart
-		JFreeChart chart = ChartFactory.createXYLineChart("Chart title", "x_axis title", "y_axis_title", dataset,
+		JFreeChart chart = ChartFactory.createXYLineChart("Grades Histogram", "grades", "grades frequency", dataset,
 				PlotOrientation.VERTICAL, legend, tooltips, urls);
 
 		/*
@@ -62,18 +68,33 @@ public class HistogramGenerator {
 
 	public static void main(String[] args) throws FileNotFoundException {
 
-		Scanner s = new Scanner(System.in);
-		int[] grades = new int[149];
-
-		while (s.hasNextInt()) {
-			int count = s.nextInt();
-			if (count >= 0 && count <= 148) {
-				grades[count]++;
-			}
-		}
-
+		String input = args[0];
+		int[] grades = new int[11];
+		int i = 0;
+		String value = null;
+		
+		try {
+			File text = new File(input);
+			Scanner scnr = new Scanner(text);
+		
+			while (scnr.hasNextLine()) {
+				value = scnr.nextLine();
+				for (int j = 0; j <= 10; j++) {
+					i = Integer.parseInt(value);
+					if (i == j) {
+						grades[j]++;
+					}//end if
+				}//end for
+			}//end while
+			scnr.close();
+		} catch (FileNotFoundException e) {
+			System.out.println("No file was found.");
+			e.getStackTrace();
+		}//end catch
+		
 		HistogramGenerator chart = new HistogramGenerator();
 		chart.generateChart(grades);
-		s.close();
-	}
-}
+		
+	}//end main
+		
+}//end class
