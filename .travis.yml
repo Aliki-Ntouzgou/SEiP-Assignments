@@ -9,14 +9,6 @@ branches:
   - master
   - development
   
-sudo: required 
-
-before_install:
-- sudo apt update 
-
-install:
-- sudo apt install maven –y 
-
 before_script: 
   - cd project
   - ls -la
@@ -26,5 +18,4 @@ script:
   
 after_success:
   - echo “Process terminated successfully”
-
   
