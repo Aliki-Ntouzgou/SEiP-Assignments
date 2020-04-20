@@ -26,3 +26,5 @@ script:
   
 after_success:
   - echo “Process terminated successfully”
+
+  
