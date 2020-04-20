@@ -11,6 +11,9 @@ import org.junit.runners.Parameterized.Parameters;
 
 import org.junit.Assert;
 
+/*
+ * Tests the factorial() method using Parameterized testing
+ */
 @RunWith(Parameterized.class)
 public class FactorialParameterizedTest {
 	

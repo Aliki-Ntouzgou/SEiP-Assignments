@@ -9,6 +9,9 @@ import org.junit.Assert;
 public class ArithmeticOperationsTest {
 	ArithmeticOperations arop = new ArithmeticOperations();
 	
+	/*
+	 * Tests the division() method
+	 */
 	@Test
 	public void test_division() {
 		Assert.assertEquals(6.0, arop.divide(12,2), 0);
@@ -19,11 +22,17 @@ public class ArithmeticOperationsTest {
 		arop.divide(12,0);
 	}
 	
+	/*
+	 * Tests the myltiply() method when it works successfully
+	 */
 	@Test
 	public void test_multiply() {
 		Assert.assertEquals(12, arop.multiply(6, 2), 0);
 	}
 	
+	/*
+	 * Tests the exceptions cases of the myltiply() method
+	 */
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 	
