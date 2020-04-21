@@ -8,6 +8,13 @@ branches:
   - master
   - development
 
+<<<<<<< HEAD
+=======
+before_sript:
+  - cd SEiP-Assignments-2020
+  - ls -la
+
+>>>>>>> 856baaeb5d9a3d649c1f72560f67a03a95a6360d
 script:
   - mvn clean package jacoco:report
 
