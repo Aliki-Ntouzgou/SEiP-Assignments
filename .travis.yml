@@ -8,10 +8,6 @@ branches:
   - master
   - development
 
-before_sript:
-  - cd seip2020-practical-assignments
-  - ls -la
-
 script:
   - mvn clean package jacoco:report
 
