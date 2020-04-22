@@ -9,7 +9,7 @@ branches:
   - development
 
 script:
-  - mvn clean package jacoco:report
+  - mvn package jacoco:report
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t ae7e9ba5-6947-4b8d-9534-9abd204df4da
