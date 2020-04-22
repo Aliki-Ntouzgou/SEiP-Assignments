@@ -1,8 +1,7 @@
 # Grades Histogram
 
 This project is created for the purposes of getting more familiar with how build automation tools work and, more specifically, how to work
-with <a href="https://maven.apache.org/">Maven</a>, applied in a simple java project that reads a file with integers and generated a diagram, 
-using the <a href="https://mvnrepository.com/artifact/jfree/jfreechart>jfreechart</a> dependency.
+with <a href="https://maven.apache.org/">Maven</a>, applied in a simple java project that reads a file with integers and generated a diagram, using the <a href="https://mvnrepository.com/artifact/jfree/jfreechart>jfreechart</a> dependency.
 
 ## Stucture
 
