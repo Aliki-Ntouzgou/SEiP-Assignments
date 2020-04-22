@@ -1,6 +1,6 @@
 # Unit Testing
 
-This folder is created for the purposes of applying and testing <b>unit testing</b> and <b>code coverage</b> utilities on a simple java 
+This project is created for the purposes of applying and testing <b>unit testing</b> and <b>code coverage</b> utilities on a simple java 
 project that consists of some mathematical methods.
 
 ## Structure
