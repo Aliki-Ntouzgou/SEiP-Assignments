@@ -32,13 +32,20 @@ public class FileIOTest {
 	public void test_readFile_RuleException() {
 		String resourcesPath = "src/test/resources/";
 		String filepath = resourcesPath + "no_existent_file.txt";
-		String filepath1 = resourcesPath + "empty_file.txt";
 		
 		thrown.expect(IllegalArgumentException.class);
 		fio.readFile(filepath);
+	}
+	
+	@Test
+	public void test_readFile_SecondRuleException() {
+		String resourcesPath = "src/test/resources/";
+		String filepath1 = resourcesPath + "empty_file.txt";
+		
 		thrown.expect(IllegalArgumentException.class);
 		fio.readFile(filepath1);
 	}
+	
 	/*
 	 * Tests the readFile() method with invalid entries
 	 */
