@@ -1,4 +1,7 @@
 # SEiP Assignments 2020
+
+https://travis-ci.com/Aliki-Ntouzgou/SEiP-Assignments-2020.svg?token=KGQ4yLReetURUiSy9Bt9&branch=development
+
 This repository includes all the assignments assigned by <a href="https://github.com/AntonisGkortzis">Antonis Gkortzis</a>, during the lab workshops for the needs of the Software Eningineering in Practice (SEiP) course offered by the <a href="https://www.dept.aueb.gr/en/dmst">Department of Management Science & Technology</a> of the Athens University of Economics and Business.
 
 The goal of this repository is twofold:
