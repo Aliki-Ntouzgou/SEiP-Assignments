@@ -42,7 +42,7 @@ For more information about building, testing and running the unittesting project
 
 ## How to ...
  1. Setup Maven in Windows - <a href="https://mkyong.com/maven/how-to-install-maven-in-windows/">tutorial</a>
- 2. Setupa Maven in Linux. Execute: ```sudo apt update && sudo apt install maven``` in terminal
+ 2. Setup Maven in Linux. Execute:  ```sudo apt update && sudo apt install maven``` in terminal
  3. Install Maven in Eclipse - <a href="https://www.eclipse.org/m2e/">link</a>
  4. Java JDK <a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html">version 1.7</a> (or later)
  
