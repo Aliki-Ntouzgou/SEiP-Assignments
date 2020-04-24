@@ -20,20 +20,20 @@ public class ArrayOperations {
 	 */
 	public int[] findPrimesInFile(FileIO fileIo, String filepath, MyMath myMath) {
 		int[] integers = fileIo.readFile(filepath);
-		int i = 0;
+		int k = 0;
 		ArrayList <Integer> prime_integers = new ArrayList<>();
 		
 		for (int integer:integers) {
 			if (mymath.isPrime(integer) == true)
-				prime_integers.add(integers[i]);
-				i++;
+				prime_integers.add(integers[k]);
+				k++;
 		}
-		int[] primes_converted = new int[prime_integers.size()];
-			int count = 0;
-			for (Integer n: prime_integers) {
-				primes_converted[count++] = n.intValue();
-			}
-		return primes_converted;
+		
+		if (prime_integers.size() == 0) 
+			throw new IllegalArgumentException("Given file is empty");
+		
+		// Convert the List to an array 
+		return prime_integers.stream().mapToInt(i -> i).toArray();
 		
 	}
 

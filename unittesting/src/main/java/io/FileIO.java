@@ -52,7 +52,7 @@ public class FileIO {
 		if (numbersList.size() == 0) 
 			throw new IllegalArgumentException("Given file is empty");
 		
-		// Convert a List to an array using 
+		// Convert the List to an array 
 		return numbersList.stream().mapToInt(i -> i).toArray();
 	}
 
