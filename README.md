@@ -34,11 +34,11 @@ This command generates a seperate jar file in each module's corresponding target
 
 ## Grades Histogram
 
-For more information about the gradeshistogram project visit the <a href="https://github.com/Aliki-Ntouzgou/SEiP-Assignments-2020/blob/development/gradeshistogram/README.md#grades-histogram"><b>gradeshistogram documentation</b></a>.
+For more information about building and running the gradeshistogram project visit the <a href="https://github.com/Aliki-Ntouzgou/SEiP-Assignments-2020/blob/development/gradeshistogram/README.md#grades-histogram"><b>gradeshistogram documentation</b></a>.
 
 ## Unit Testing
 
-For more information about the unittesting project visit the <a href="https://github.com/Aliki-Ntouzgou/SEiP-Assignments-2020/tree/development/unittesting#unit-testing"><b>unittesting documentation</b></a>.
+For more information about building, testing and running the unittesting project visit the <a href="https://github.com/Aliki-Ntouzgou/SEiP-Assignments-2020/tree/development/unittesting#unit-testing"><b>unittesting documentation</b></a>.
 
 ## How to ...
  1. Setup Maven in Windows - <a href="https://mkyong.com/maven/how-to-install-maven-in-windows/">tutorial</a>
