@@ -3,9 +3,16 @@ package math;
 import io.FileIO;
 import java.util.ArrayList;
 
+/**
+* The ArrayOperations provides simple arithmetic operations
+* that serve as hands-on practice on Unit Testing.
+*
+* @author  Aliki-Ntouzgou
+* @since   March 2020
+*/
+
 public class ArrayOperations {
 	
-	FileIO fileIo = new FileIO();
 	MyMath mymath = new MyMath();
 	
 	/*
