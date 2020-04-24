@@ -38,8 +38,7 @@ public class ArithmeticOperationsTest {
 	
 	@Test
 	public void test_multiply_RuleException() {
-		thrown.expect(IllegalArgumentException.class);
-		arop.multiply(0, 2);
+		Assert.assertEquals(0.0, arop.multiply(0, 2),0);
 	}
 	
 	@Test
