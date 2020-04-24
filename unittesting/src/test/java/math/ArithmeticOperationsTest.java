@@ -40,8 +40,6 @@ public class ArithmeticOperationsTest {
 	public void test_multiply_RuleException() {
 		thrown.expect(IllegalArgumentException.class);
 		arop.multiply(0, 2);
-		thrown.expect(IllegalArgumentException.class);
-		arop.multiply(2147483647, 2);
 	}
 	
 	@Test
