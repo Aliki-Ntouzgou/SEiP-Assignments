@@ -38,7 +38,7 @@ For more information about building and running the gradeshistogram project visi
 
 ## Unit Testing
 
-For more information about building, testing and running the unittesting project visit the <a href="https://github.com/Aliki-Ntouzgou/SEiP-Assignments-2020/unittesting/README.md"><b>unittesting documentation</b></a>.
+For more information about building, testing and running the unittesting project visit the <a href="./unittesting/README.md"><b>unittesting documentation</b></a>.
 
 ## How to ...
  1. Setup Maven in Windows - <a href="https://mkyong.com/maven/how-to-install-maven-in-windows/">tutorial</a>
