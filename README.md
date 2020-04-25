@@ -34,7 +34,7 @@ This command generates a seperate jar file in each module's corresponding target
 
 ## Grades Histogram
 
-For more information about building and running the gradeshistogram project visit the <a href="https://github.com/Aliki-Ntouzgou/SEiP-Assignments-2020/gradeshistogram/README.md"><b>gradeshistogram documentation</b></a>.
+For more information about building and running the gradeshistogram project visit the <a href="./gradeshistogram/README.md"><b>gradeshistogram documentation</b></a>.
 
 ## Unit Testing
 
