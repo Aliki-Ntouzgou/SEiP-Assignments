@@ -40,10 +40,19 @@ public class FileIOTest {
 	@Test
 	public void test_readFile_SecondRuleException() {
 		String resourcesPath = "src/test/resources/";
-		String filepath1 = resourcesPath + "empty_file.txt";
+		String filepath = resourcesPath + "empty_file.txt";
 		
 		thrown.expect(IllegalArgumentException.class);
-		fio.readFile(filepath1);
+		fio.readFile(filepath);
+	}
+	
+	@Test
+	public void test_readFile_ThirdRuleException() {
+		String resourcesPath = "src/test/resources/";
+		String filepath = resourcesPath + "invalid_entries.txt";
+		
+		thrown.expect(NumberFormatException.class);
+		fio.readFile(filepath);
 	}
 	
 	/*
