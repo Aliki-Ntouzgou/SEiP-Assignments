@@ -46,15 +46,6 @@ public class FileIOTest {
 		fio.readFile(filepath);
 	}
 	
-	@Test
-	public void test_readFile_ThirdRuleException() {
-		String resourcesPath = "src/test/resources/";
-		String filepath = resourcesPath + "invalid_entries.txt";
-		
-		thrown.expect(NumberFormatException.class);
-		fio.readFile(filepath);
-	}
-	
 	/*
 	 * Tests the readFile() method with invalid entries
 	 */
