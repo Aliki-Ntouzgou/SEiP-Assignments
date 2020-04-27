@@ -28,6 +28,18 @@ public class ArrayOperationsTest {
 	
 		Assert.assertArrayEquals(new int[] {13,17}, arop.findPrimesInFile(fio, "filepath", mym));
 	}
+	
+	/*
+	 * Tests when the prime_integers array is empty and throws an exception
+	 */
+	@Test
+	public void test_primeintegers_Mocking() {
+		
+		//Mock the MyMath dependency
+		MyMath mym = mock(MyMath.class);
+		when(mym.isPrime(4)).thenThrow(IllegalArgumentException.class);
+		
+	}
 		
 }
 

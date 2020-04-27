@@ -30,7 +30,7 @@ public class ArrayOperations {
 		}
 		
 		if (prime_integers.size() == 0) 
-			throw new IllegalArgumentException("Given file is empty");
+			throw new IllegalArgumentException("There were not found any prime integer numbers.");
 		
 		// Convert the List to an array 
 		return prime_integers.stream().mapToInt(i -> i).toArray();
