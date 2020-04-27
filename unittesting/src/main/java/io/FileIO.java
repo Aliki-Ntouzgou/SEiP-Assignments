@@ -39,7 +39,7 @@ public class FileIO {
 				try {
 					int number = Integer.parseInt(line);
 					numbersList.add(number);
-				} catch (NumberFormatException e) {
+				} catch (IllegalArgumentException e) {
 					//ignores entries that are not integer numbers
 				}
 			}
