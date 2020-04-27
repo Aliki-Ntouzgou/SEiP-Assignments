@@ -57,5 +57,12 @@ public class FileIOTest {
 		thrown.expect(IllegalArgumentException.class);
 		fio.readFile(filepath);
 	}
+	/*public void testReadFileContainsInvalidEntries() {
+		int[] expected = new int[] {1,2,3,4,5,6};
+		String resourcesPath = "src/test/resources/";
+		String filepath = resourcesPath + "other_format.txt";
+		
+		Assert.assertEquals(expected, filepath);	
+	}*/
 	
 }
