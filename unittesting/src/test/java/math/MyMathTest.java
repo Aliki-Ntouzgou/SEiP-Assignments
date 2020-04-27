@@ -47,5 +47,12 @@ public class MyMathTest {
 		Assert.assertEquals(true, mymath.isPrime(13));
 	}
 	
+	/*
+	 * Testing isPrime() method's case where n=0
+	 */
+	@Test
+	public void test_isPrime_False() {
+			Assert.assertEquals(false, mymath.isPrime(9));
+	}
 }
 
