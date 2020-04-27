@@ -57,4 +57,11 @@ public class FileIOTest {
 		Assert.assertEquals(expected, filepath1);	
 	}
 	
+	@Test(expected=IllegalArgumentException.class)
+	public void testReadFileFormatException() {
+		String resourcesPath = "src/test/resources/";
+		String filepath = resourcesPath + "empty_file.txt";
+		fio.readFile(filepath);
+	}
+	
 }
