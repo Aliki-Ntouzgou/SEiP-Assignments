@@ -49,12 +49,13 @@ public class FileIOTest {
 	/*
 	 * Tests the readFile() method with invalid entries
 	 */
+	@Test
 	public void testReadFileContainsInvalidEntries() {
-		int[] expected = new int[] {1,2,3,4,5,6};
 		String resourcesPath = "src/test/resources/";
-		String filepath1 = resourcesPath + "invalid_entries.txt";
+		String filepath = resourcesPath + "other_format.txt";
 		
-		Assert.assertEquals(expected, filepath1);	
+		thrown.expect(IllegalArgumentException.class);
+		fio.readFile(filepath);
 	}
 	
 }
