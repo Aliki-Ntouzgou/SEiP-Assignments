@@ -57,13 +57,4 @@ public class FileIOTest {
 		Assert.assertEquals(expected, filepath1);	
 	}
 	
-	@Test(expected=NumberFormatException.class)
-	public void testReadFileFormatException() {
-		String resourcesPath = "src/test/resources/";
-		String filepath = resourcesPath + "other_format.txt";
-
-		thrown.expect(NumberFormatException.class);
-		fio.readFile(filepath);
-	}
-	
 }
