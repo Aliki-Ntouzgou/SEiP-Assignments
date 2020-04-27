@@ -52,5 +52,17 @@ public class ArithmeticOperationsTest {
 		thrown.expect(IllegalArgumentException.class);
 		arop.multiply(8,0);
 	}
+	
+	@Test
+	public void test_multiply_RuleExceptionFourth() {
+		thrown.expect(IllegalArgumentException.class);
+		arop.multiply(-1,2);
+	}
+	
+	@Test
+	public void test_multiply_RuleExceptionFifth() {
+		thrown.expect(IllegalArgumentException.class);
+		arop.multiply(2,-1);
+	}
 
 }
