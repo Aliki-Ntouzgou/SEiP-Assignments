@@ -30,9 +30,16 @@ public class ArithmeticOperationsTest {
 		Assert.assertEquals(12, arop.multiply(6, 2), 0);
 	}
 	
-	/*
-	 * Tests the exceptions cases of the myltiply() method
-	 */
+	@Test
+	public void test_multiply_XZeroException() {
+		Assert.assertEquals(0.0, arop.multiply(0, 2),0);
+	}
+	
+	@Test (expected=ArithmeticException.class)
+	public void test_multiply_YZeroException() {
+		Assert.assertEquals(0.0, arop.multiply(2, 0),0);
+	}
+	
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 	
