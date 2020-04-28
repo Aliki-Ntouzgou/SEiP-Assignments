@@ -37,23 +37,6 @@ public class ArithmeticOperationsTest {
 	public ExpectedException thrown = ExpectedException.none();
 	
 	@Test
-	public void test_multiply_RuleException() {
-		Assert.assertEquals(0.0, arop.multiply(0, 2),0);
-	}
-	
-	@Test
-	public void test_multiply_RuleExceptionSecond() {
-		thrown.expect(IllegalArgumentException.class);
-		arop.multiply(2147483647, 2);
-	}
-	
-	@Test
-	public void test_multiply_RuleExceptionThird() {
-		thrown.expect(IllegalArgumentException.class);
-		arop.multiply(8,0);
-	}
-	
-	@Test
 	public void test_multiply_RuleExceptionFourth() {
 		thrown.expect(IllegalArgumentException.class);
 		arop.multiply(-1,2);
@@ -63,6 +46,12 @@ public class ArithmeticOperationsTest {
 	public void test_multiply_RuleExceptionFifth() {
 		thrown.expect(IllegalArgumentException.class);
 		arop.multiply(2,-1);
+	}
+	
+	@Test
+	public void test_multiply_RuleExceptionSecond() {
+		thrown.expect(IllegalArgumentException.class);
+		arop.multiply(2147483647, 2);
 	}
 
 }
