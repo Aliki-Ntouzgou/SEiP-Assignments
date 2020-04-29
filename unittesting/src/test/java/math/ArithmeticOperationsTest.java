@@ -35,7 +35,7 @@ public class ArithmeticOperationsTest {
 		Assert.assertEquals(0.0, arop.multiply(0, 2),0);
 	}
 	
-	@Test (expected=ArithmeticException.class)
+	@Test 
 	public void test_multiply_YZeroException() {
 		Assert.assertEquals(0.0, arop.multiply(2, 0),0);
 	}
