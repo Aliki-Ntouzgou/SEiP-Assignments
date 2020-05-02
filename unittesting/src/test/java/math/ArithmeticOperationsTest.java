@@ -31,12 +31,12 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test
-	public void test_multiply_XZeroException() {
+	public void test_multiply_XZero() {
 		Assert.assertEquals(0.0, arop.multiply(0, 2),0);
 	}
 	
-	@Test (expected = ArithmeticException.class)
-	public void test_multiply_YZeroException() {
+	@Test 
+	public void test_multiply_YZero() {
 		Assert.assertEquals(0, arop.multiply(2, 0),0);
 	}
 	
