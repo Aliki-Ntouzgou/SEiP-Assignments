@@ -1,0 +1,16 @@
+language: java
+
+jdk:
+  - openjdk8
+
+branches:
+  only:
+  - master
+  - development
+
+script:
+  - mvn package jacoco:report
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t ae7e9ba5-6947-4b8d-9534-9abd204df4da
+  - echo "Hello there!"
