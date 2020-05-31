@@ -42,7 +42,7 @@ For more information about building, testing and running the unittesting project
 
 ## Source Code Analyzer
 
-For more information about building and running the gradeshistogram project visit the <a href="./SourceCodeAnalyzer/README.md"><b>gradeshistogram documentation</b></a>.
+For more information about building and running the SourceCodeAnalyzer project visit the <a href="./SourceCodeAnalyzer/README.md"><b>SourceCodeAnalyzer documentation</b></a>.
 
 ## How to ...
  1. Setup Maven in Windows - <a href="https://mkyong.com/maven/how-to-install-maven-in-windows/">tutorial</a>
