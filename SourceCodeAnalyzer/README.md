@@ -19,14 +19,19 @@ mvn package jacoco:report
 java –jar “jar-with-dependencies” arg0 arg1 arg2 arg3 arg4
 ```
 
-were args translate to: 	
-	arg0 = “JavaSourceCodeInputFile” (e.g., src/test/resources/TestClass.java)
-	arg1 = “sourceCodeAnalyzerType” [regex|strcomp]
-	arg2 = “SourceCodeLocationType” [local|web]
-	arg3 = “OutputFilePath” (e.g., ../output_metrics_file)
-	arg4 = “OutputFileType” [csv|json]
+were args translate to:<n>
+```
+arg0 = “JavaSourceCodeInputFile” (e.g., src/test/resources/TestClass.java)<n>
+arg1 = “sourceCodeAnalyzerType” [regex|strcomp]<n>
+arg2 = “SourceCodeLocationType” [local|web]<n>
+arg3 = “OutputFilePath” (e.g., ../output_metrics_file)<n>
+arg4 = “OutputFileType” [csv|json]<n>
+```
+	
 <i>example: </i>
-	java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
+```
+java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
+```
 
 ## The Logic behing the Design of the SourceCodeAnalyzer module
 
@@ -38,7 +43,7 @@ The module's design is based on the <b>SOLID Design Principles</b>.What he acron
 4. <b>I</b>nterface Segregation Principle, which represents that many client-specific interfaces are better than one general-purpose interface
 5. Dependency In<b>v</b>ersion, which represents that one entity should depend upon abstractions and not concretions
 
-<i><b>More specifically</b><i>
+<i><b>More specifically</b></i>
 
 I have included <b>3</b> of the [23 GoF Design Patterns](https://springframework.guru/gang-of-four-design-patterns/) and these are:
 1. Strategy Pattern
