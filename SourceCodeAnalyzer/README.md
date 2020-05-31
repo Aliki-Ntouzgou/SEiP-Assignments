@@ -61,6 +61,5 @@ However, it is important to acknowledge the fact that there is a tradeoff: altho
 	
 ## UML Class Diagram of the SourceCodeAnalyzer Module
 
-<img src="UMLClassDiagram.jpg" alt="drawing" width="500"/>
+You can see the UML Class Diagram of the SourceCodeAnalyzer module <a href="./media/UMLClassDiagram.jpg"><b>here</b></a>.
 
-<i>UML Class Diagram made in [Lucid Chart](https://app.lucidchart.com/documents#/dashboard)</i>
