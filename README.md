@@ -40,6 +40,10 @@ For more information about building and running the gradeshistogram project visi
 
 For more information about building, testing and running the unittesting project visit the <a href="./unittesting/README.md"><b>unittesting documentation</b></a>.
 
+## Source Code Analyzer
+
+For more information about building and running the SourceCodeAnalyzer project visit the <a href="./SourceCodeAnalyzer/README.md"><b>SourceCodeAnalyzer documentation</b></a>.
+
 ## How to ...
  1. Setup Maven in Windows - <a href="https://mkyong.com/maven/how-to-install-maven-in-windows/">tutorial</a>
  2. Setup Maven in Linux. Execute:  ```sudo apt update && sudo apt install maven``` in terminal
