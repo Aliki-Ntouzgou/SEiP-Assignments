@@ -61,5 +61,7 @@ However, it is important to acknowledge the fact that there is a tradeoff: altho
 	
 ## UML Class Diagram of the SourceCodeAnalyzer Module
 
-You can see the UML Class Diagram of the SourceCodeAnalyzer module <a href="SEiP-Assignments-2020/SourceCodeAnalyzer/UMLClassDiagram.png"><b>here</b></a>.
+You can see the UML Class Diagram of the SourceCodeAnalyzer module here:
+
+![](UMLClassDiagram.png)
 
