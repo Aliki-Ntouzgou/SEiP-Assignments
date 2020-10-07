@@ -1,43 +1,32 @@
 package demo;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
-import codeanalyzer.*;
+import sourcecodeanalyzerrefactored.SourceCodeAnalyzerFacade;
 
 public class DemoClient {
 
 	public static void main(String[] args) throws IOException {
-		String filepath = "src/main/resources/TestClass.java";
-		String sourceCodeAnalyzerType = "regex";
-		String sourceFileLocation = "local";
-		String outputFilePath = "output_metrics";
-		String outputFileType = "csv";
-		
-		if(args.length == 5) {
-			filepath = args[0];
-			sourceCodeAnalyzerType = args[1];
-			sourceFileLocation = args[2];
-			outputFilePath = args[3];
-			outputFileType = args[4];
-		} else if (args.length != 0) {
-			System.out.println("Incorrect number of arguments.");
-			System.exit(1);
+		if(args.length != 5) {
+			System.err.println("Invalid number of arguments");
+			System.out.println("Execute as java -jar jar-with-dependencies arg0 arg1 arg2 arg3 arg4");
+			System.out.println("arg0 = JavaSourceCodeInputFile (e.g., src/test/resources/TestClass.java)\r\n" + 
+					"arg1 = sourceCodeAnalyzerType [regex|strcomp]\r\n" + 
+					"arg2 = SourceCodeLocationType [local|web]\r\n" + 
+					"arg3 = OutputFilePath (e.g., ../output_metrics_file)\r\n" + 
+					"arg4 = OutputFileType [csv|json]\r");
+			System.exit(0);
 		}
-
-		SourceCodeAnalyzer analyzer = new SourceCodeAnalyzer(sourceFileLocation);
-		int loc = analyzer.calculateLOC(filepath, sourceCodeAnalyzerType);
-		int nom = analyzer.calculateNOM(filepath, sourceCodeAnalyzerType);
-		int noc = analyzer.calculateNOC(filepath, sourceCodeAnalyzerType);
 		
-		Map<String, Integer> metrics = new HashMap<>();
-		metrics.put("loc",loc);
-		metrics.put("nom",nom);
-		metrics.put("noc",noc);
-				
-		MetricsExporter exporter = new MetricsExporter();
-		exporter.writeFile(outputFileType, metrics, outputFilePath);
+		String filepath = args[0];
+		String analysisType = args[1];
+		String fileLocation = args[2];
+		String outputFilePath = args[3];
+		String outputFileType = args[4];
+		
+		SourceCodeAnalyzerFacade analyzerFacade = new SourceCodeAnalyzerFacade();
+		analyzerFacade.performFileAnalysis(filepath, analysisType, fileLocation, outputFilePath, outputFileType);
+
 	}
 
 }
